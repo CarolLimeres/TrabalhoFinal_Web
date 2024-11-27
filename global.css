@@ -31,3 +31,11 @@ button {
   background: none;
   cursor: pointer;
 }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1120px;
+  width: 100%;
+  padding: 10px;
+}
