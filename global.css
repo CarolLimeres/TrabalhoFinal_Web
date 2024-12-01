@@ -55,6 +55,7 @@ button {
   max-width: 1000px;
   width: 100%;
   flex: 1;
+  padding: 20px;
 }
 
 header-component,

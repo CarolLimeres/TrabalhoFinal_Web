@@ -1,2 +1,30 @@
-.portfolio {
+.portfolio .portfolio-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.portfolio .photos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.portfolio .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.portfolio .hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .portfolio .photos-container {
+    grid-template-columns: 1fr;
+  }
 }
