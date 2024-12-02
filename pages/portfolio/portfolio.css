@@ -1,16 +1,24 @@
+.portfolio .portfolio-title {
+  font-family: "Playfair", serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .portfolio .portfolio-menu {
   display: flex;
   justify-content: center;
   gap: 54px;
   border-bottom: 1px solid var(--gray);
   margin-bottom: 40px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .portfolio button {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   color: var(--gray);
+  transition: ease 0.3s;
 }
 
 .portfolio button:hover {
@@ -40,11 +48,12 @@
 }
 
 @media (max-width: 520px) {
+
   .portfolio .portfolio-menu {
     flex-direction: column;
     align-items: center;
     gap: 20px;
     border: none;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
