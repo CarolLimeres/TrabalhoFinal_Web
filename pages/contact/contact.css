@@ -1,2 +1,89 @@
 .contact {
 }
+
+.contact body{
+    background-color: #eaeaea;   
+    font-family: "Manrope", serif; 
+    font-family: "Playfair", serif;
+}
+
+.contact .custom-list {
+    list-style-type: square;
+}
+
+.contact h1, h2 {
+    font-family: "Playfair", serif;
+}
+
+.contact p, li{
+    font-family: "Manrope", serif; 
+
+}
+
+.contact .pagecontact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 10px;
+}
+
+.contact .box {
+    flex: 1;
+    padding: 25px;
+    text-align: left;
+}
+
+.contact .titulos {
+    text-align: center; 
+}
+
+  /* Formulário */
+.contact .contactus {
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;}
+
+.contact form {
+display: flex;
+flex-direction: column;
+width: 90%; 
+margin: auto;
+padding: 5em;
+border: 2px solid #2c2c2c; 
+}
+
+.contact form label {
+    display: block; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+.contact input, textarea, select {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 16px; 
+    border: 0px; 
+    border-radius: 0; 
+    font-size: 16px; 
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #2c2c2c; 
+ } 
+
+.contact button {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    padding: 10px; 
+    background-color: #2c2c2c; 
+    color: #eaeaea;  
+}
+
+.contact form input:focus, form textarea:focus {
+  outline: none; 
+  border-bottom: 2px solid #2c2c2c; 
+}
+  
+
+

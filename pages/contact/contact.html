@@ -14,20 +14,88 @@
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <title>Contacts</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <!-- estilos gerais (p todo website): -->
     <link rel="stylesheet" href="/global.css" />
     <!-- estilos da pág específica: -->
-    <link rel="stylesheet" href="/pages/contact/contact.html" />
+    <link rel="stylesheet" href="/pages/contact/contact.css" />
     <script src="/components/header.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript" defer></script>
   </head>
+
   <body>
     <div class="app">
       <header-component></header-component>
       <div class="main-container contact">
-        <h1>TESTE CONTACT</h1>
+        <br />
+        <h1 class="titulos">CONTACTS</h1>
+        <br />
+
+        <div class="contactus">
+          <form action=" ">
+            <div></div>
+            <div>
+              <label for="form-name">Name:</label>
+              <input type="text" name="form-name" id="form-name" required />
+            </div>
+            <div>
+              <label for="form-mail">Email:</label>
+              <input type="email" name="form-email" id="form-email" />
+            </div>
+            <div>
+              <label for="form-mensagem">Message:</label>
+              <textarea
+                type="textarea"
+                name="form-mensagem"
+                id="form-mensagem"
+                cols="30"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="button">
+              <button type="submit">SEND</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="pagecontact">
+          <div class="box">
+            <ul class="custom-list">
+              <li>
+                <strong>Email:</strong> <br />
+                ricardo.marfel.foto@gmail.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <ul class="custom-list">
+              <li>
+                <strong>Mobile:</strong> <br />
+                +351 912 345 678
+              </li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <ul class="custom-list">
+              <li>
+                <strong>Adress:</strong> <br />
+                Rua das Artes 142, 5º Direito, 4050-456 Porto.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
       <footer-component></footer-component>
     </div>
   </body>
