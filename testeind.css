@@ -1,0 +1,117 @@
+.index body {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #eaeaea;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    color: white;
+    background-color: #1a1a1a; /* Fundo preto suave */
+  }
+  
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('./images/banner01.png'); /* Substitua pela sua imagem */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .tagline {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.8;
+    font-style: italic;
+  }
+  
+  .tagline span {
+    font-weight: bold;
+    font-style: normal;
+    color: #d1c3a7; /* Cor dourada suave */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .tagline {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  
+    .nav-links a {
+      font-size: 18px;
+    }
+  
+    .logo {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tagline {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  
+    .nav-links {
+      gap: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 16px;
+    }
+  
+    .logo {
+      font-size: 16px;
+    }
+  }

@@ -1,2 +1,43 @@
 .index {
 }
+
+
+.index {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+
+}
+
+/* imagem start */
+.back-home {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/banner01.png'); 
+    background-size: cover; /* Cobrir todo o espaço */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+}
+/* imagem end */
+
+/* about ricardo start */
+
+.index .imagem-about {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.index .texto-about {
+margin-left: 400px;
+position: absolute;
+}
+.index .box-text {
+    width: 100%; /*Para assumir a largura completa */
+    max-width: 400px; /* Delimitar ao tamanho da imagem */
+    margin: 10px auto; /* Centraliza horizontalmente */
+    text-align: justify; /* Texto alinhado */
+    font-size: 14px;
+    line-height: 1.6; /* Melhor leitura */
+    color: #121212;
+}
