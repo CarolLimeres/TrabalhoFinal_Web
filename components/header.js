@@ -40,7 +40,7 @@ class Header extends HTMLElement {
           }
   
           a {
-            font-weight: 600;
+          font-weight: 600;
             margin: 0 25px;
             color: var(--gray);
             text-decoration: none;
@@ -48,7 +48,7 @@ class Header extends HTMLElement {
   
           a:hover {
             padding-bottom: 3px;
-            box-shadow: inset 0 -1.5px 0 0 var(--charcoal);
+            box-shadow: inset 0 -1.5px 0 0 var(--gray);
           }
 
         }
