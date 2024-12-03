@@ -40,15 +40,15 @@ class Header extends HTMLElement {
           }
   
           a {
-            font-weight: 700;
+            font-weight: 600;
             margin: 0 25px;
-            color: var(--charcoal);
+            color: var(--gray);
             text-decoration: none;
           }
   
           a:hover {
             padding-bottom: 3px;
-            box-shadow: inset 0 -1.5px 0 0 var(--black);
+            box-shadow: inset 0 -1.5px 0 0 var(--charcoal);
           }
 
         }
