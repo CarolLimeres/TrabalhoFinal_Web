@@ -8,26 +8,27 @@ class Header extends HTMLElement {
         <style>
         .header {        
           nav {
-            height: 60px;
+            height: 70px;
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
-             background-color: rgba(234, 234, 234, 0.7);
-             backdrop-filter: blur(10px);
+              background-color: transparent; /* Sem cor de fundo */
+    box-shadow: 0px 4px 6px rgba(172, 171, 169, 0.3);
+     
           }
   
           ul {
             padding: 0;
             display: flex;
             align-items: center;
-            justify-content: space-around;
           }
 
           .nav-header-container {
           display: flex;
+          width: 100%;
            align-items: center;
-           justify-content: space-between;
+           justify-content: center;
+           gap: 269px;
           }
 
           .logo-header {
@@ -41,34 +42,38 @@ class Header extends HTMLElement {
           a {
             font-weight: 700;
             margin: 0 25px;
-            color: #fff;
+            color: var(--charcoal);
             text-decoration: none;
           }
   
           a:hover {
-            padding-bottom: 5px;
-            box-shadow: inset 0 -2px 0 0 #fff;
+            padding-bottom: 3px;
+            box-shadow: inset 0 -1.5px 0 0 var(--black);
           }
+
         }
         </style>
-        <header class="header">
-          <nav>
-            <ul>
-            <div class="nav-header-container">
-            <div class="logo-header-container">
-            <li><a href="/index.html"><img src="/components/logo.png" class="logo-header" alt="" /></a></li>
-            </div>
-            <div class="items-header-container">
-              <li><a href="/index.html">About</a></li>
-              <li><a href="/pages/blog/blog.html">Blog</a></li>
-              <li><a href="/pages/contact/contact.html">Contact</a></li>
-              <li><a href="/pages/services/services.html">Services</a></li>
-              <li><a href="/pages/portfolio/portfolio.html">Portfolio</a></li> 
-              </div>
-              </div>
-            </ul>
-          </nav>
-        </header>
+
+       <header class="header">
+  <nav>
+    <div class="nav-header-container">
+      <div class="logo-header-container">
+        <a href="/index.html">
+          <img src="/components/logo.png" class="logo-header" alt="Logo" />
+        </a>
+      </div>
+      <div class="items-header-container">
+        <ul>
+          <li><a href="/index.html">About</a></li>
+          <li><a href="/pages/blog/blog.html">Blog</a></li>
+          <li><a href="/pages/contact/contact.html">Contact</a></li>
+          <li><a href="/pages/services/services.html">Services</a></li>
+          <li><a href="/pages/portfolio/portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
       `;
   }
 }
