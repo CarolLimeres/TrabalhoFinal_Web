@@ -7,18 +7,19 @@ class Footer extends HTMLElement {
     this.innerHTML = `
         <style>         
           .footer {
-            height: 40px;
+            height: 50px;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color:  #0a0a23;
-            color: white;
+            background-color: #e2e1df;
+          box-shadow: 0px 4px 8px rgba(117, 112, 111, 0.2), 
+            0px 2px 4px rgba(0, 0, 0, 0.1);
 
             div {
-              font-weight: 700;
               margin: 0 25px;
-              color: #fff;
+               color: var(--gray);
               text-decoration: none;
             }
           } 

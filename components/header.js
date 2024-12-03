@@ -8,27 +8,31 @@ class Header extends HTMLElement {
         <style>
         .header {        
           nav {
-            height: 70px;
+            height: 60px;
             width: 100%;
             display: flex;
             align-items: center;
-              background-color: transparent; /* Sem cor de fundo */
-    box-shadow: 0px 4px 6px rgba(172, 171, 169, 0.3);
-     
+            justify-content: center;
+              background-color: #e2e1df;
+          box-shadow: 0px 4px 8px rgba(117, 112, 111, 0.2), 
+            0px 2px 4px rgba(0, 0, 0, 0.1);
+     position: fixed;
           }
   
           ul {
             padding: 0;
             display: flex;
             align-items: center;
+            
           }
 
           .nav-header-container {
           display: flex;
           width: 100%;
            align-items: center;
-           justify-content: center;
-           gap: 269px;
+          justify-content: space-between;
+               padding: 0 20px;
+    max-width: 1000px;
           }
 
           .logo-header {
@@ -40,18 +44,25 @@ class Header extends HTMLElement {
           }
   
           a {
-          font-weight: 600;
+          font-weight: 500;
             margin: 0 25px;
             color: var(--gray);
             text-decoration: none;
+            transition: ease 0.3s;
           }
   
           a:hover {
             padding-bottom: 3px;
-            box-shadow: inset 0 -1.5px 0 0 var(--gray);
+           color: var(--black);
           }
 
         }
+
+        @media (max-width: 600px) {
+  .header .items-header-container {
+    display: none;
+  }
+}
         </style>
 
        <header class="header">
