@@ -10,7 +10,7 @@
 
 }
 
-/* imagem start */
+/* imagem topo start */
 .back-home {
     height: 100vh;
     width: 100%;
@@ -19,10 +19,44 @@
     background-position: center; /* Centralizar a imagem */
     background-repeat: no-repeat; /* Evita repetição */
 }
-/* imagem end */
+/* imagem topo end */
+
+/* linhas start*/
+.line-left, .line-right {
+    position: absolute;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #121212;
+}
+.line-left {
+    margin-left: 50px;
+    position: absolute;
+    transform: translateY(105%);
+    left: 20px;
+}
+
+.line-right {
+    margin-right: 50px;
+    position: absolute;
+    transform: translateY(113%);
+    right: 20px;
+}
+/* linhas end*/
 
 /* about ricardo start */
-
+.index .line-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 3px;
+    height: 50px;
+    background-color: #121212;
+}
 .index .imagem-about {
     display: flex;
     justify-content: center;
@@ -41,3 +75,10 @@ position: absolute;
     line-height: 1.6; /* Melhor leitura */
     color: #121212;
 }
+/* about ricardo end */
+
+/* imagem fundo start*/
+.content .img {
+    
+}
+/* imagem fundo end*/
