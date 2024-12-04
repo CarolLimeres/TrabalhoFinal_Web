@@ -19,7 +19,7 @@ class Header extends HTMLElement {
      position: fixed;
           }
   
-          ul {
+          .ul-nav {
             padding: 0;
             display: flex;
             align-items: center;
@@ -56,12 +56,39 @@ class Header extends HTMLElement {
            color: var(--black);
           }
 
+          .dropdown {
+          display: none;
+          }
+
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 720px) {
+
   .header .items-header-container {
     display: none;
   }
+
+  .header .dropdown {
+  display: flex;
+  justify-content: flex-end;
+  }
+
+  .header .dropdown button {
+    background-color: var(--steel);
+  border: none;
+  }
+
+ .header  .dropdown-toggle:hover {
+    background-color: var(--gray);
+  }
+
+
+
+  .header .dropdown-item:active {
+    background-color: var(--white);
+    color: var(--black);
+  }
+    
 }
         </style>
 
@@ -74,15 +101,61 @@ class Header extends HTMLElement {
         </a>
       </div>
       <div class="items-header-container">
-        <ul>
+        <ul class="ul-nav">
           <li><a href="/index.html">About</a></li>
-          <li><a href="/pages/blog/blog.html">Blog</a></li>
-          <li><a href="/pages/contact/contact.html">Contact</a></li>
-          <li><a href="/pages/services/services.html">Services</a></li>
           <li><a href="/pages/portfolio/portfolio.html">Portfolio</a></li>
+           <li><a href="/pages/services/services.html">Services</a></li>
+          <li><a href="/pages/blog/blog.html">Blog</a></li>
+          <li><a href="/pages/contact/contact.html">Contacts</a></li>
         </ul>
       </div>
     </div>
+     <!-- BOOTSTRAP - dropdown menu -->
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/index.html"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/portfolio/portfolio.html">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/services/services.html"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/blog/blog.html"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/contact/contact.html"
+                      >Contacts</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
   </nav>
 </header>
       `;
