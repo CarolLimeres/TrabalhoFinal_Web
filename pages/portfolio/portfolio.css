@@ -1,3 +1,12 @@
+.portfolio-photo {
+  margin-top: 60px;
+}
+
+.portfolio-photo img {
+  width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
 .portfolio {
   margin-bottom: 40px;
 }
@@ -8,7 +17,8 @@
   gap: 54px;
   border-bottom: 1px solid var(--gray);
   margin-bottom: 40px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+
 }
 
 .portfolio button {
