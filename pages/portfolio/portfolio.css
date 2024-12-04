@@ -1,10 +1,15 @@
 .portfolio-photo {
-  margin-top: 60px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* margin-top: 60px; */
 }
 
 .portfolio-photo img {
-  width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%; /* Faz a imagem ocupar 100% da largura da página */
+  height: auto; /* Mantém a proporção original da imagem */
+  display: block; /* Remove espaçamento extra ao redor da imagem */
+  object-fit: contain;
 }
 
 .portfolio {
@@ -18,7 +23,6 @@
   border-bottom: 1px solid var(--gray);
   margin-bottom: 40px;
   /* margin-top: 60px; */
-
 }
 
 .portfolio button {
@@ -48,6 +52,16 @@
   display: none;
 }
 
+@media (max-width: 720px) {
+  .portfolio-photo img {
+    display: none;
+  }
+
+  .portfolio .portfolio-menu {
+    margin-top: 60px;
+  }
+}
+
 @media (max-width: 600px) {
   .portfolio .photos-container {
     grid-template-columns: 1fr;
@@ -60,6 +74,6 @@
     align-items: center;
     gap: 20px;
     border: none;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 }

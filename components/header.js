@@ -19,11 +19,11 @@ class Header extends HTMLElement {
      position: fixed;
           }
   
-          .ul-nav {
+      .ul-nav {
             padding: 0;
             display: flex;
             align-items: center;
-            
+            gap: 40px;
           }
 
           .nav-header-container {
@@ -45,7 +45,6 @@ class Header extends HTMLElement {
   
           a {
           font-weight: 500;
-            margin: 0 25px;
             color: var(--gray);
             text-decoration: none;
             transition: ease 0.3s;
@@ -81,8 +80,6 @@ class Header extends HTMLElement {
  .header  .dropdown-toggle:hover {
     background-color: var(--gray);
   }
-
-
 
   .header .dropdown-item:active {
     background-color: var(--white);
