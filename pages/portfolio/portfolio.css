@@ -56,9 +56,6 @@
   grid-gap: 10px;
 }
 
-.portfolio .photos-container img {
-}
-
 .portfolio .column {
   display: flex;
   flex-direction: column;
