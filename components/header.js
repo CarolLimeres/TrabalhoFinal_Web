@@ -51,7 +51,6 @@ class Header extends HTMLElement {
           }
   
           a:hover {
-            padding-bottom: 3px;
            color: var(--black);
           }
 

@@ -6,10 +6,11 @@
 }
 
 .portfolio-photo img {
-  width: 100%; /* Faz a imagem ocupar 100% da largura da página */
-  height: auto; /* Mantém a proporção original da imagem */
-  display: block; /* Remove espaçamento extra ao redor da imagem */
-  object-fit: contain;
+  width: 100%;
+  padding-top: 60px;
+  height: 350px;
+  object-fit: cover;
+  object-position: 100% 0;
 }
 
 .portfolio {
