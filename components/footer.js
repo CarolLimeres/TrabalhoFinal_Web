@@ -7,6 +7,7 @@ class Footer extends HTMLElement {
     this.innerHTML = `
         <style>       
         .footer-container {
+        font-size: 12px;
         display:flex;
         width: 100%;
     justify-content: space-between;

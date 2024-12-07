@@ -6,7 +6,10 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <style>
-        .header {        
+        .header {     
+        z-index: 10;
+        position: fixed;
+        
           nav {
             height: 60px;
             width: 100%;
@@ -20,6 +23,7 @@ class Header extends HTMLElement {
           }
   
       .ul-nav {
+      margin: 0;
             padding: 0;
             display: flex;
             align-items: center;
