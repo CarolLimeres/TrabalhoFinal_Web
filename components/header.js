@@ -64,6 +64,10 @@ class Header extends HTMLElement {
 
         }
 
+        .dropdown-toggle:focus, .dropdown-toggle:focus-visible {
+        box-shadow: none !important;
+        }
+
         @media (max-width: 720px) {
 
   .header .items-header-container {
@@ -73,6 +77,7 @@ class Header extends HTMLElement {
   .header .dropdown {
   display: flex;
   justify-content: flex-end;
+padding: 0 20px;
   }
 
   .header .dropdown button {
@@ -145,17 +150,7 @@ class Header extends HTMLElement {
                 </ul>
               </div>
             </ul>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarContent"
-              aria-controls="navbarContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+
   </nav>
 </header>
       `;
