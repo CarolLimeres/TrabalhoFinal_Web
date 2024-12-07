@@ -1,2 +1,48 @@
-.services {
+.services h1 {
 }
+
+.services body {  
+      font-family: "Manrope", serif; 
+}
+
+.services h1, h2 {
+    font-family: "Playfair", serif;
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.services .line {
+    line-height: 1.8;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    overflow: hidden;
+    font-size: calc(10px + 0.5vw); /*reduzir texto formato responsivo */
+  }
+    
+  .box {
+    flex: 1 1 calc(50% - 10px);  /* flex-grow, flex-shrink, flex-basis */
+    min-width: 200px; 
+    height: 400px;
+    color: #2c2c2c;
+    padding: 10px; 
+  }
+
+  .services .box img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}   
+
+.services .custom-list {
+    list-style-type: square; /* marcador quadrado*/
+  }
+
