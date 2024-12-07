@@ -41,10 +41,25 @@ class Footer extends HTMLElement {
 color: var(--gray)
 }
 
+.social-media-container {
+display: flex;
+gap: 18px;
+margin-bottom: 20px;
+}
+
+.social-media {
+width: 30px;
+cursor: pointer;
+}
+
+.insta {
+width: 40px;
+}
 
 .footer-copyright {
     padding-bottom: 30px;
      color: var(--white);
+     font-size: 14px;
 }
         
           .footer {
@@ -92,6 +107,11 @@ color: var(--gray)
             <div class="contact-footer">Porto | 4050-456</div>
             <div class="contact-footer">marfelstudio@gmail.com</div>
             </div>
+          </div>
+          <div class="social-media-container">
+          <img src="/components/whatsapp1.svg" class="social-media whats" alt="" />
+          <img src="/components/facebook1.svg" class="social-media face" alt="" />
+          <img src="/components/instagram1.svg" class="social-media insta" alt="" />
           </div>
           <div class="footer-copyright">
           © All rights reserved 2024
