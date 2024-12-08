@@ -6,8 +6,8 @@
 
 ## Live Version
 
-**[Clique aqui! :)](https://...)**
+**[Clique aqui! :)](https://carol-limeres.neocities.org/)**
 
 ## Sobre o Projeto
 
-Website criado para o estúdio fotográfico Marfel utilizando HTML, CSS e Bootstrap.
+Website criado para o estúdio fotográfico Marfel utilizando HTML, CSS, Javascript e Bootstrap.
